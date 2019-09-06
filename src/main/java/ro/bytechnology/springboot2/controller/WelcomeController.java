@@ -12,7 +12,7 @@ public class WelcomeController {
 
     @Autowired
     private WelcomeService welcomeService;
-    @RequestMapping(value = "/welcome",method = RequestMethod.GET,produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/welcome",method = RequestMethod.GET,produces = MediaType.TEXT_PLAIN_VALUE)
     public String hello(){
         return welcomeService.helloMesage();
     }
